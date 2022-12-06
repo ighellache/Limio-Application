@@ -1,5 +1,7 @@
 # Limio-Application
 
+Link to the project is found here:
+
 ## User Stories:
 - Must set length of word to 5 letters e.g. word.length == 5
 - Must restrict number of tries to 6 to guess the word - so set an integer counter variable
