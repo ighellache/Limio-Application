@@ -1,0 +1,67 @@
+<html lang="en">
+<html>
+    <head>
+        <title>Wordle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <!-- Font Awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link rel="stylesheet" href="wordle.css">
+        
+    </head>
+
+    <body>      
+    
+<!-- Trigger/Open The Modal -->
+
+        <!-- main wordle -->
+        <h1 id="title">Wordle</h1>
+        <button id="info" onclick="showInstructions()">Instructions</button>
+<!-- hr creates a horizontal line -->
+        <hr> 
+        <!-- instructions -->
+        <div id="instructions" class="ins">
+        <div class="ins-content">
+        <span class="close" onclick="closeInstructions()">&times;</span>
+        <p>Hello! Welcome to Wordle. <br>
+            You have 6 guesses to guess the 5-letter word.</p>
+         </div> 
+        </div>
+
+        <!-- game board -->
+            <br>
+        <div id="board">
+        </div>
+        <br>
+        <h1 id="answer"></h1>
+
+        <!-- The Modal which hides and shows-->
+        <div id="winModal" class="modal">
+        <!-- Modal content for winner -->
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Congratulations, you guessed the word right!
+                Here is the definition:</p>
+            
+            <!-- adding words API -->
+                <div class="result" id="result"></div>
+                <button class="playagain" onclick="playagain()">Click here to play again!
+                </button>
+            </div>
+            
+            <!-- words API ends here -->
+        </div>
+
+        </div>
+    </body>
+    <script src="wordle.js"></script>
+</html>
+
+
+<!-- add shaking animation when not in word list appears -->
+<!-- change word dictionary to API -->
+<!-- add winning animation and calculate points -->
+<!-- add customisations on word length 
